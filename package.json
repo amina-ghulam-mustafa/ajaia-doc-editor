@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && prisma db push && next build",
     "start": "next start",
     "lint": "eslint",
-   "postinstall": "prisma generate && prisma db push"
+    "postinstall": "prisma generate"
   },
-  "dependencies": { 
+  "dependencies": {
     "@prisma/client": "^5.22.0",
     "@tiptap/extension-bullet-list": "^3.31.4",
     "@tiptap/extension-heading": "^3.31.4",
