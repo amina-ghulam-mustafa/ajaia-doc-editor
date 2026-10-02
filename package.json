@@ -9,7 +9,7 @@
     "lint": "eslint",
     "postinstall": "prisma generate"
   },
-  "dependencies": {
+  "dependencies": { 
     "@prisma/client": "^5.22.0",
     "@tiptap/extension-bullet-list": "^3.31.4",
     "@tiptap/extension-heading": "^3.31.4",
